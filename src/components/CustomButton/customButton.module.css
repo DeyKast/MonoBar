@@ -34,11 +34,23 @@
 }
 
 .wide {
-  width: 335px;
+  width: clamp(280px, 85vw, 335px);
   height: 60px;
 
-  font-size: 24px;
+  font-size: calc(20px + 3 * (100vw / 1280));
   border-radius: 30px;
 
   padding: 10px 25px;
+}
+
+.medium {
+  width: clamp(120px, 40vw, 160px);
+  height: 35px;
+
+  font-size: 20px;
+  border-radius: 20px;
+
+  padding: 0;
+
+  justify-content: center;
 }

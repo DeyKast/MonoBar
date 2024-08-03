@@ -11,9 +11,11 @@ const CustomButton = ({ label, type, icon, onClick }) => {
   return (
     <button className={buttonClass} onClick={onClick}>
       {label}
-      <svg className={css.icon}>
-        <use className={css.icon} href={`${spritePath}#${icon}`} />
-      </svg>
+      {icon ? (
+        <svg className={css.icon}>
+          <use className={css.icon} href={`${spritePath}#${icon}`} />
+        </svg>
+      ) : null}
     </button>
   );
 };
