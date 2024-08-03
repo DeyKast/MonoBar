@@ -1,5 +1,4 @@
 import { useNavigate, Link } from 'react-router-dom';
-import { useEffect } from 'react';
 
 import CustomButton from 'components/CustomButton/CustomButton';
 
