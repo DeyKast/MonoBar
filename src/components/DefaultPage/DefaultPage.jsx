@@ -4,7 +4,7 @@ import css from './defaultPage.module.css';
 const DefaultPage = ({ title, children }) => {
   return (
     <div className={css.container}>
-      <div className={`section ${css.defaultMenu}`}>
+      <div className={`section ${css.defaultMenuSection}`}>
         <h1 className={css.defaultPageTitle}>{title}</h1>
         {children}
       </div>
