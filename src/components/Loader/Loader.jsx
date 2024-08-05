@@ -8,7 +8,7 @@ const Loader = () => {
         visible={true}
         height="150"
         width="150"
-        color="#500805"
+        color="var(--accent-color)"
         ariaLabel="rings-loading"
         wrapperStyle={{}}
         wrapperClass=""

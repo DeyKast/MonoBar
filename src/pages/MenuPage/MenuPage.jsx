@@ -3,6 +3,9 @@ import css from './menuPage.module.css';
 
 import CustomButton from 'components/CustomButton/CustomButton';
 import DefaultPage from 'components/DefaultPage/DefaultPage';
+import MenuList from 'components/MenuList/MenuList';
+
+import menuData from '../../service/menu.json';
 
 const MenuPage = () => {
   return (
@@ -15,6 +18,9 @@ const MenuPage = () => {
           <CustomButton label="Бар" type="medium" onClick={() => {}} />
         </li>
       </ul>
+
+      <MenuList data={menuData.cookery} />
+      <MenuList data={menuData.bar} />
     </DefaultPage>
   );
 };

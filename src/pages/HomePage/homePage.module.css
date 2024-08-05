@@ -1,8 +1,8 @@
 .containerHome {
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(80, 8, 5, 1) 100%
+    var(--black-color) 10%,
+    var(--accent-color) 100%
   );
   position: relative;
   overflow: hidden;
@@ -84,21 +84,21 @@
     left: -100%;
     width: 100%;
     height: 1px;
-    background-color: white;
+    background-color: var(--white-color);
     transition: left var(--animation);
   }
 
   &:hover,
   &:focus,
   &:active {
-    color: white;
+    color: var(--white-color);
 
     &::after {
       left: 0;
     }
 
     .icon {
-      fill: white;
+      fill: var(--white-color);
     }
   }
 

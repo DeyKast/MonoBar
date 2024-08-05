@@ -28,11 +28,10 @@ const HomePage = () => {
         <div className={css.infoWrapper}>
           <p className={css.timeText}>12:00 - 23:00</p>
           <a
-            href="tel:+380993133801"
+            href="tel:+380954079707"
             className={`${css.socialLink} ${css.phoneText}`}
           >
-            {' '}
-            +38 099 31 33 801
+            +38 095 40 79 707
           </a>
         </div>
 

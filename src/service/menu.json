@@ -1,0 +1,78 @@
+{
+  "cookery": [
+    {
+      "categoryID": "p1c1",
+      "category": "Бургери",
+      "items": [
+        {
+          "id": "p1c1i1",
+          "categoryID": "p1c1",
+          "name": "Моно Бургер",
+          "amount": "535 грам",
+          "ingredients": [
+            "Котлета з телятини",
+            "Чеддер",
+            "Печериці",
+            "Цибуля",
+            "Яйце",
+            "Соус моно"
+          ],
+          "price": "158 грн",
+          "imageName": "monoBurger"
+        },
+        {
+          "id": "p1c1i2",
+          "categoryID": "p1c1",
+          "name": "Моно Бургер 2X",
+          "amount": "670 грам",
+          "ingredients": [
+            "Подвійна котлета з телятини",
+            "Чеддер",
+            "Печериці",
+            "Цибуля",
+            "Яйце",
+            "Соус моно"
+          ],
+          "price": "176 грн",
+          "imageName": "monoBurger2X"
+        }
+      ]
+    },
+    {
+      "categoryID": 2,
+      "category": "Пельмені",
+      "items": []
+    },
+    {
+      "categoryID": 3,
+      "category": "Гофри",
+      "items": []
+    },
+    {
+      "categoryID": 4,
+      "category": "Салати",
+      "items": []
+    },
+    {
+      "categoryID": 5,
+      "category": "Перші страви",
+      "items": []
+    },
+    {
+      "categoryID": 6,
+      "category": "Для компанії",
+      "items": []
+    },
+    {
+      "categoryID": 7,
+      "category": "Десерти",
+      "items": []
+    },
+    {
+      "categoryID": 8,
+      "category": "Сніданки",
+      "items": []
+    }
+  ],
+  "bar": []
+}

@@ -3,7 +3,7 @@
   color: var(--black-color);
   border: none;
 
-  font-weight: 500;
+  font-weight: 550;
 
   display: flex;
   align-items: center;
@@ -53,4 +53,32 @@
   padding: 0;
 
   justify-content: center;
+}
+
+.smallAdaptive {
+  width: auto;
+  height: 25px;
+
+  font-size: 16px;
+  border-radius: 20px;
+
+  padding: 5px 12px;
+  justify-content: center;
+
+  text-wrap: nowrap;
+}
+
+.smallAdaptiveChose {
+  width: clamp(60px, 25vw, 100px);
+  height: 23px;
+
+  font-size: 12px;
+  border-radius: 20px;
+
+  justify-content: center;
+
+  text-wrap: nowrap;
+
+  background-color: var(--accent-color);
+  color: var(--beige-color);
 }

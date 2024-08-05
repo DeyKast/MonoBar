@@ -3,9 +3,10 @@
 :root {
   --background-color: #141212;
   --beige-color: #f8f9e4;
-  --accent-color: #500805;
+  --accent-color: #9e0231;
 
   --black-color: #000000;
+  --white-color: #ffffff;
 
   --animation: 300ms linear;
 }
@@ -53,7 +54,7 @@ div {
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 
   margin-left: auto;
@@ -63,11 +64,6 @@ div {
 }
 
 .section {
-  flex: 1;
-
-  padding-top: 15px;
-  padding-bottom: 15px;
-
   padding-left: 25px;
   padding-right: 25px;
 
