@@ -35,18 +35,244 @@
           ],
           "price": "176 грн",
           "imageName": "monoBurger2X"
+        },
+        {
+          "id": "p1c1i3",
+          "categoryID": "p1c1",
+          "name": "Chicken",
+          "amount": "400 грам",
+          "ingredients": [
+            "Курятина",
+            "Чеддер",
+            "Листя салату",
+            "Квашений огірок",
+            "Цибулеві кільця",
+            "Соус моно"
+          ],
+          "price": "164 грн",
+          "imageName": "ChickenBurger"
+        },
+        {
+          "id": "p1c1i4",
+          "categoryID": "p1c1",
+          "name": "Mr. Beef",
+          "amount": "385 грам",
+          "ingredients": [
+            "Телятина",
+            "Вершковий сир",
+            "Чеддер",
+            "Салат айзберг",
+            "Коктейльні томати",
+            "Цибуля",
+            "Соус моно"
+          ],
+          "price": "185 грн",
+          "imageName": "BeefBurger"
         }
       ]
     },
     {
-      "categoryID": 2,
+      "categoryID": "p1c2",
       "category": "Пельмені",
-      "items": []
+      "items": [
+        {
+          "id": "p1c2i1",
+          "categoryID": "p1c2",
+          "name": "Вареники з картоплею",
+          "amount": "310/420 грам",
+          "ingredients": [],
+          "price": "66/75 грн",
+          "imageName": "PotatoVarenyk"
+        },
+        {
+          "id": "p1c2i2",
+          "categoryID": "p1c2",
+          "name": "Вареники зі шпинатом та сиром",
+          "amount": "270/380 грам",
+          "ingredients": [],
+          "price": "72/81 грн",
+          "imageName": "SpinachVarenyk"
+        },
+        {
+          "id": "p1c2i3",
+          "categoryID": "p1c2",
+          "name": "Пельмені",
+          "amount": "310 грам",
+          "ingredients": [],
+          "price": "85 грн",
+          "imageName": "Pelmeni"
+        },
+        {
+          "id": "p1c2i4",
+          "categoryID": "p1c2",
+          "name": "Пельмені Фрі з сирним соусом",
+          "amount": "260 грам",
+          "ingredients": [],
+          "price": "105 грн",
+          "imageName": "PelmeniFri"
+        },
+        {
+          "id": "p1c2i5",
+          "categoryID": "p1c2",
+          "name": "Деруни зі сметаною",
+          "amount": "210 грам",
+          "ingredients": [],
+          "price": "77 грн",
+          "imageName": "Derun"
+        },
+        {
+          "id": "p1c2i6",
+          "categoryID": "p1c2",
+          "name": "Деруни з курятиною та беконом",
+          "amount": "265 грам",
+          "ingredients": [],
+          "price": "95 грн",
+          "imageName": "MeatDerun"
+        }
+      ]
     },
     {
-      "categoryID": 3,
+      "categoryID": "p1c3",
       "category": "Гофри",
-      "items": []
+      "items": [
+        {
+          "id": "p1c3i1",
+          "categoryID": "p1c3",
+          "name": "Гофра з Прошуто",
+          "amount": "270 г",
+          "ingredients": [
+            "Прошуто",
+            "Огірок",
+            "Крем на основі сиру Філадельфія",
+            "Лист салату",
+            "Рукола"
+          ],
+          "price": "138 грн",
+          "imageName": "gofraProsciutto"
+        },
+        {
+          "id": "p1c3i2",
+          "categoryID": "p1c3",
+          "name": "Гофра Ранкова",
+          "amount": "280 г",
+          "ingredients": [
+            "Бекон",
+            "Яйця",
+            "Сирний соус",
+            "Лист салату",
+            "Рукола",
+            "Томат"
+          ],
+          "price": "128 грн",
+          "imageName": "gofraMorning"
+        },
+        {
+          "id": "p1c3i3",
+          "categoryID": "p1c3",
+          "name": "Гофра з Куркою та грибами",
+          "amount": "260 г",
+          "ingredients": [
+            "Сирно-вершковий соус",
+            "Курка",
+            "Печериці",
+            "Лист салату",
+            "Рукола"
+          ],
+          "price": "128 грн",
+          "imageName": "gofraChickenMushroom"
+        },
+        {
+          "id": "p1c3i4",
+          "categoryID": "p1c3",
+          "name": "Гофра \"Цезар\"",
+          "amount": "230 г",
+          "ingredients": [
+            "Соус Цезар",
+            "Салат",
+            "Курка",
+            "Томат",
+            "Варене яйце",
+            "Пармезан",
+            "Рукола"
+          ],
+          "price": "125 грн",
+          "imageName": "gofraCaesar"
+        },
+        {
+          "id": "p1c3i5",
+          "categoryID": "p1c3",
+          "name": "Гофра Сирна",
+          "amount": "220 г",
+          "ingredients": [
+            "Сирний соус",
+            "Камамбер",
+            "Фета",
+            "Пармезан",
+            "Мед",
+            "Грецький горіх"
+          ],
+          "price": "135 грн",
+          "imageName": "gofraCheese"
+        },
+        {
+          "id": "p1c3i6",
+          "categoryID": "p1c3",
+          "name": "Гофра Ягідна",
+          "amount": "260 г",
+          "ingredients": [
+            "Свіжі сезонні ягоди",
+            "Крем на основі сиру Філадельфія"
+          ],
+          "price": "125 грн",
+          "imageName": "gofraBerry"
+        },
+        {
+          "id": "p1c3i7",
+          "categoryID": "p1c3",
+          "name": "Гофра з Морозивом",
+          "amount": "240 г",
+          "ingredients": [
+            "Морозиво пломбір",
+            "Свіжі сезонні ягоди"
+          ],
+          "price": "128 грн",
+          "imageName": "gofraIceCream"
+        },
+        {
+          "id": "p1c3i8",
+          "categoryID": "p1c3",
+          "name": "Гофра Карамельна",
+          "amount": "210 г",
+          "ingredients": [
+            "Карамель"
+          ],
+          "price": "94 грн",
+          "imageName": "gofraCaramel"
+        },
+        {
+          "id": "p1c3i9",
+          "categoryID": "p1c3",
+          "name": "Гофра Банан з Шоколадом",
+          "amount": "220 г",
+          "ingredients": [
+            "Банан",
+            "Шоколад"
+          ],
+          "price": "99 грн",
+          "imageName": "gofraBananaChocolate"
+        },
+        {
+          "id": "p1c3i10",
+          "categoryID": "p1c3",
+          "name": "Гофра з цукровою пудрою",
+          "amount": "100 г",
+          "ingredients": [
+            "Цукрова пудра"
+          ],
+          "price": "56 грн",
+          "imageName": "gofraSugarPowder"
+        }
+      ]
     },
     {
       "categoryID": 4,
@@ -74,5 +300,22 @@
       "items": []
     }
   ],
-  "bar": []
+
+  "bar": [
+    {
+      "categoryID": "p2c1",
+      "category": "Пиво",
+      "items": [
+        {
+          "id": "p2c1i1",
+          "categoryID": "p2c1",
+          "name": "Пиво",
+          "amount": "500 мл",
+          "ingredients": [],
+          "price": "58 грн",
+          "imageName": "Pivo"
+        }
+      ]
+    }
+  ]
 }

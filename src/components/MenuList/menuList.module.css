@@ -23,3 +23,9 @@
   font-weight: 500;
   color: var(--beige-color);
 }
+
+.menuBlockWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

@@ -19,8 +19,10 @@ const MenuPage = () => {
         </li>
       </ul>
 
-      <MenuList data={menuData.cookery} />
-      <MenuList data={menuData.bar} />
+      <div className={css.menuListWrapper}>
+        <MenuList data={menuData.cookery} />
+        <MenuList data={menuData.bar} />
+      </div>
     </DefaultPage>
   );
 };
