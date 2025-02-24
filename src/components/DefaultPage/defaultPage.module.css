@@ -1,8 +1,15 @@
+.defaultPageContainer {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .defaultMenuSection {
   flex-direction: column;
   justify-content: flex-start;
 
-  width: 100%;
   max-width: 620px;
 
   margin-top: 25px;

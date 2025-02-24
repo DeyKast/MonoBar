@@ -68,8 +68,7 @@ div {
 .section {
   flex: 1;
 
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 20px;
 
   display: flex;
   flex-direction: column;

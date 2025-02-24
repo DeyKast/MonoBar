@@ -1,15 +1,17 @@
 import CustomButton from 'components/CustomButton/CustomButton';
 import css from './menuNavigator.module.css';
 
-const MenuNavigator = ({ data }) => {
+const MenuNavigator = ({ data, activeCategory, onCategoryClick }) => {
   return (
     <div className={css.menuNavigatorWrapper}>
       {data.map(category => (
         <CustomButton
+          key={category.categoryID}
           label={category.category}
           type="smallAdaptive"
-          key={category.categoryID}
-        ></CustomButton>
+          isActive={activeCategory === category.categoryID}
+          onClick={() => onCategoryClick(category.categoryID)}
+        />
       ))}
     </div>
   );

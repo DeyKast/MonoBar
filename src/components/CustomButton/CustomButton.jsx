@@ -3,19 +3,26 @@ import classNames from 'classnames';
 
 import spritePath from '../../images/icons/sprite.svg';
 
-const CustomButton = ({ label, type, icon, onClick }) => {
+const CustomButton = ({
+  label,
+  type,
+  icon,
+  isActive,
+  onClick,
+}) => {
   const buttonClass = classNames(css.customButton, {
     [css[type]]: type,
+    [css.isActive]: isActive,
   });
 
   return (
     <button className={buttonClass} onClick={onClick}>
       {label}
-      {icon ? (
+      {icon && (
         <svg className={css.icon}>
-          <use className={css.icon} href={`${spritePath}#${icon}`} />
+          <use href={`${spritePath}#${icon}`} />
         </svg>
-      ) : null}
+      )}
     </button>
   );
 };

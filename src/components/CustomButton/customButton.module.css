@@ -82,3 +82,8 @@
   background-color: var(--accent-color);
   color: var(--beige-color);
 }
+
+.isActive {
+  background-color: var(--accent-color);
+  color: var(--beige-color);
+}

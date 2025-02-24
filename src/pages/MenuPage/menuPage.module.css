@@ -1,12 +1,22 @@
-.navButtonsList {
+.menuTypeButtonsWrapper {
   width: 100%;
-  display: flex;
-  flex-direction: row;
 
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.menuListWrapper {
+.menuListsWrapper {
   width: 100%;
   overflow: hidden;
+
+  gap: 100px;
+
+  margin-top: 35px;
+}
+
+.menuSlider {
+  width: 100%;
+  gap: 100px;
+  transition: all linear 100ms;
 }

@@ -231,10 +231,7 @@
           "categoryID": "p1c3",
           "name": "Гофра з Морозивом",
           "amount": "240 г",
-          "ingredients": [
-            "Морозиво пломбір",
-            "Свіжі сезонні ягоди"
-          ],
+          "ingredients": ["Морозиво пломбір", "Свіжі сезонні ягоди"],
           "price": "128 грн",
           "imageName": "gofraIceCream"
         },
@@ -243,9 +240,7 @@
           "categoryID": "p1c3",
           "name": "Гофра Карамельна",
           "amount": "210 г",
-          "ingredients": [
-            "Карамель"
-          ],
+          "ingredients": ["Карамель"],
           "price": "94 грн",
           "imageName": "gofraCaramel"
         },
@@ -254,10 +249,7 @@
           "categoryID": "p1c3",
           "name": "Гофра Банан з Шоколадом",
           "amount": "220 г",
-          "ingredients": [
-            "Банан",
-            "Шоколад"
-          ],
+          "ingredients": ["Банан", "Шоколад"],
           "price": "99 грн",
           "imageName": "gofraBananaChocolate"
         },
@@ -266,9 +258,7 @@
           "categoryID": "p1c3",
           "name": "Гофра з цукровою пудрою",
           "amount": "100 г",
-          "ingredients": [
-            "Цукрова пудра"
-          ],
+          "ingredients": ["Цукрова пудра"],
           "price": "56 грн",
           "imageName": "gofraSugarPowder"
         }
@@ -306,6 +296,42 @@
       "categoryID": "p2c1",
       "category": "Пиво",
       "items": [
+        {
+          "id": "p2c1i1",
+          "categoryID": "p2c1",
+          "name": "Пиво",
+          "amount": "500 мл",
+          "ingredients": [],
+          "price": "58 грн",
+          "imageName": "Pivo"
+        },
+        {
+          "id": "p2c1i1",
+          "categoryID": "p2c1",
+          "name": "Пиво",
+          "amount": "500 мл",
+          "ingredients": [],
+          "price": "58 грн",
+          "imageName": "Pivo"
+        },
+        {
+          "id": "p2c1i1",
+          "categoryID": "p2c1",
+          "name": "Пиво",
+          "amount": "500 мл",
+          "ingredients": [],
+          "price": "58 грн",
+          "imageName": "Pivo"
+        },
+        {
+          "id": "p2c1i1",
+          "categoryID": "p2c1",
+          "name": "Пиво",
+          "amount": "500 мл",
+          "ingredients": [],
+          "price": "58 грн",
+          "imageName": "Pivo"
+        },
         {
           "id": "p2c1i1",
           "categoryID": "p2c1",

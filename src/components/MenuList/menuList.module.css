@@ -5,12 +5,14 @@
   justify-content: center;
   flex-direction: column;
 
-  gap: 25px;
+  gap: 35px;
 
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .menuListCardsWrapper {
+  width: 100%;
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -27,5 +29,29 @@
 .menuBlockWrapper {
   display: flex;
   flex-direction: column;
+  min-width: 100%;
+}
+
+.menuNavigatorContainer {
   width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--beige-color);
+  z-index: 100;
+  padding: 10px 15px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menuNavigatorWrapper {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 5px;
+  white-space: nowrap;
 }
