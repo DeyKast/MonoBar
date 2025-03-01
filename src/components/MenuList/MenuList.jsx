@@ -37,7 +37,7 @@ const MenuList = ({ data }) => {
     if (categoryElement) {
       const offset = navigatorRef.current.offsetHeight || 0;
       window.scrollTo({
-        top: categoryElement.offsetTop - offset - 100,
+        top: categoryElement.offsetTop - offset - 50,
         behavior: 'smooth',
       });
     }

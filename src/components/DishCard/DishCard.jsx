@@ -6,7 +6,7 @@ import CustomButton from 'components/CustomButton/CustomButton';
 const DishCard = ({ dishesData }) => {
   const getImage = imageName => {
     try {
-      return require(`../../images/photos/${imageName}.png`);
+      return require(`../../images/photos/${imageName}.webp`);
     } catch (error) {
       console.log(`Image not found: ${imageName}, using default image.`);
       return defaultImage;

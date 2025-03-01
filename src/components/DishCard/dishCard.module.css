@@ -16,12 +16,20 @@
 }
 
 .imageWrapper {
+  width: 140px;
+  height: 140px;
   border-radius: 20px;
   overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dishCardImage {
-  width: clamp(80px, 33vw, 140px);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .dishCardInfoWrapper {

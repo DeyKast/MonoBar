@@ -6,13 +6,30 @@
   width: 100%;
   height: auto;
 
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
-  scrollbar-width: none;
 
   gap: 10px;
 
   position: sticky;
   top: 0;
   z-index: 100;
+  background-color: var(--beige-color);
+  padding: 5px 0;
+
+  &::-webkit-scrollbar-track {
+    border-radius: 12px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar {
+    height: 3px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 }

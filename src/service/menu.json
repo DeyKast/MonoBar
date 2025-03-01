@@ -50,7 +50,7 @@
             "Соус моно"
           ],
           "price": "164 грн",
-          "imageName": "ChickenBurger"
+          "imageName": "chickenBurger"
         },
         {
           "id": "p1c1i4",
@@ -67,7 +67,7 @@
             "Соус моно"
           ],
           "price": "185 грн",
-          "imageName": "BeefBurger"
+          "imageName": "beefBurger"
         }
       ]
     },
@@ -265,29 +265,258 @@
       ]
     },
     {
-      "categoryID": 4,
+      "categoryID": "p1c4",
       "category": "Салати",
-      "items": []
+      "items": [
+        {
+          "id": "p1c4i1",
+          "categoryID": "p1c4",
+          "name": "«Цезар» з курятиною",
+          "amount": "280 г",
+          "ingredients": [
+            "Куряче філе",
+            "Коктейльні томати",
+            "Яйце",
+            "Мікс салату",
+            "Пармезан",
+            "Грінки",
+            "Соус Цезар"
+          ],
+          "price": "134 грн",
+          "imageName": "saladCaesar"
+        },
+        {
+          "id": "p1c4i2",
+          "categoryID": "p1c4",
+          "name": "«Грецький»",
+          "amount": "280 г",
+          "ingredients": [
+            "Перець болгарський",
+            "Огірок",
+            "Коктейльні томати",
+            "Фета",
+            "Синя цибуля",
+            "Оливки"
+          ],
+          "price": "112 грн",
+          "imageName": "saladGreek"
+        },
+        {
+          "id": "p1c4i3",
+          "categoryID": "p1c4",
+          "name": "Теплий салат з курятиною",
+          "amount": "260 г",
+          "ingredients": [
+            "Мікс салату",
+            "Курятина",
+            "Печериці",
+            "Картопля по-селянськи",
+            "Соус сирний на основі фети",
+            "Рукола"
+          ],
+          "price": "145 грн",
+          "imageName": "saladWarmChicken"
+        },
+        {
+          "id": "p1c4i4",
+          "categoryID": "p1c4",
+          "name": "Теплий салат з телятиною",
+          "amount": "260 г",
+          "ingredients": [
+            "Мікс салату",
+            "Телятина",
+            "Печериці",
+            "Картопля по-селянськи",
+            "Соус сирний на основі фети",
+            "Рукола"
+          ],
+          "price": "145 грн",
+          "imageName": "saladWarmBeef"
+        },
+        {
+          "id": "p1c4i5",
+          "categoryID": "p1c4",
+          "name": "З Прошуто",
+          "amount": "260 г",
+          "ingredients": [
+            "Прошуто",
+            "Мікс салату",
+            "Карамелізована груша",
+            "Бебі моцарела",
+            "Коктейльні томати",
+            "Соус вінегрет"
+          ],
+          "price": "145 грн",
+          "imageName": "saladProsciutto"
+        }
+      ]
     },
     {
-      "categoryID": 5,
+      "categoryID": "p1c5",
       "category": "Перші страви",
-      "items": []
+      "items": [
+        {
+          "id": "p1c5i1",
+          "categoryID": "p1c5",
+          "name": "Суп дня",
+          "amount": "250 г",
+          "ingredients": ["Дательніше у офіціанта"],
+          "price": "68 грн",
+          "imageName": "daySoup"
+        }
+      ]
     },
     {
-      "categoryID": 6,
+      "categoryID": "p1c6",
       "category": "Для компанії",
-      "items": []
+      "items": [
+        {
+          "id": "p1c6i1",
+          "categoryID": "p1c6",
+          "name": "Сирна тарілка",
+          "amount": "250 г",
+          "ingredients": [
+            "Камамбер",
+            "Фета",
+            "Сир 4 перці",
+            "Пармезан",
+            "Сулугуні",
+            "Моцарела",
+            "Мед"
+          ],
+          "price": "249 грн",
+          "imageName": "companyCheesePlate"
+        },
+        {
+          "id": "p1c6i2",
+          "categoryID": "p1c6",
+          "name": "Сет Фрі",
+          "amount": "740 г",
+          "ingredients": [
+            "Курячі нагетси",
+            "Картопля",
+            "Цибулеві кільця",
+            "Кабаноси",
+            "Соус бургер"
+          ],
+          "price": "377 грн",
+          "imageName": "companySetFri"
+        },
+        {
+          "id": "p1c6i3",
+          "categoryID": "p1c6",
+          "name": "Сет Сиров’ялений",
+          "amount": "360 г",
+          "ingredients": [
+            "Бастурма",
+            "Коппа",
+            "Прошуто",
+            "Чорізо",
+            "Фует",
+            "Кабаноси",
+            "Крекер"
+          ],
+          "price": "329 грн",
+          "imageName": "companySetDried"
+        },
+        {
+          "id": "p1c6i4",
+          "categoryID": "p1c6",
+          "name": "Сет Ковбасний",
+          "amount": "1100 г",
+          "ingredients": [
+            "Ковбаски курячі",
+            "Ковбаски свинні",
+            "Картопля",
+            "Квашена капуста",
+            "Соус гірчиця",
+            "Кетчуп"
+          ],
+          "price": "388 грн",
+          "imageName": "companySetSausage"
+        }
+      ]
     },
     {
-      "categoryID": 7,
+      "categoryID": "p1c7",
       "category": "Десерти",
-      "items": []
+      "items": [
+        {
+          "id": "p1c7i1",
+          "categoryID": 7,
+          "name": "Сирники",
+          "amount": "200 г",
+          "ingredients": ["з карамеллю або джемом абрикосовим / ягідним"],
+          "price": "85 грн"
+        },
+        {
+          "id": "p1c7i2",
+          "categoryID": 7,
+          "name": "Чізкейк «Орео»",
+          "amount": "100 г",
+          "ingredients": [],
+          "price": "67 грн"
+        },
+        {
+          "id": "p1c7i3",
+          "categoryID": 7,
+          "name": "Морозиво з джемом",
+          "amount": "200 г",
+          "ingredients": ["джем абрикосовий / ягідний"],
+          "price": "68 грн"
+        },
+        {
+          "id": "p1c7i4",
+          "categoryID": 7,
+          "name": "Морозиво з лимонним фрешем",
+          "ingredients": [],
+          "amount": "170 г",
+          "price": "59 грн"
+        }
+      ]
     },
     {
-      "categoryID": 8,
+      "categoryID": "p1c8",
       "category": "Сніданки",
-      "items": []
+      "items": [
+        {
+          "id": "p1c8i1",
+          "categoryID": "p1c8",
+          "name": "Англійський сніданок",
+          "amount": "450 г",
+          "ingredients": [
+            "Омлет або яєчня",
+            "Ковбаски",
+            "Квасоля в томаті",
+            "Бекон",
+            "Томати гриль",
+            "Печериці гриль",
+            "Тост",
+            "Вершкове масло",
+            "Джем",
+            "Кава, чай або сік апельсиновий на вибір"
+          ],
+          "price": "138 грн"
+        },
+        {
+          "id": "p1c8i2",
+          "categoryID": "p1c8",
+          "name": "Європейський сніданок",
+          "amount": "450 г",
+          "ingredients": [
+            "Омлет або яєчня",
+            "Куряче філе",
+            "Мікс салату",
+            "Томати гриль",
+            "Печериці гриль",
+            "Тост",
+            "Вершкове масло",
+            "Джем",
+            "Кава, чай або сік апельсиновий на вибір"
+          ],
+          "price": "138 грн"
+        }
+      ]
     }
   ],
 
