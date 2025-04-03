@@ -1,9 +1,9 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, forwardRef } from 'react';
 import MenuNavigator from 'components/MenuNavigator/MenuNavigator';
 import css from './menuList.module.css';
 import DishCard from 'components/DishCard/DishCard';
 
-const MenuList = ({ data }) => {
+const MenuList = forwardRef(({ data }, ref) => {
   const navigatorRef = useRef(null);
   const categoriesRef = useRef({});
   const [isSticky, setIsSticky] = useState(false);
@@ -16,7 +16,6 @@ const MenuList = ({ data }) => {
         setIsSticky(window.scrollY > offsetTop);
       }
 
-      // Визначаємо, яка категорія зараз у фокусі
       let currentCategory = null;
       Object.entries(categoriesRef.current).forEach(([key, ref]) => {
         if (ref && ref.offsetTop - 200 <= window.scrollY) {
@@ -31,7 +30,6 @@ const MenuList = ({ data }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Функція для прокрутки до вибраної категорії
   const handleCategoryClick = categoryID => {
     const categoryElement = categoriesRef.current[categoryID];
     if (categoryElement) {
@@ -44,10 +42,10 @@ const MenuList = ({ data }) => {
   };
 
   return (
-    <div className={css.menuBlockWrapper}>
+    <div ref={ref} className={css.menuBlockWrapper}>
       <div
         ref={navigatorRef}
-        className={`${css.menuNavigatorContainer} ${
+        className={`menuNavigator ${css.menuNavigatorContainer} ${
           isSticky ? css.sticky : ''
         }`}
       >
@@ -72,6 +70,6 @@ const MenuList = ({ data }) => {
       </div>
     </div>
   );
-};
+});
 
 export default MenuList;
