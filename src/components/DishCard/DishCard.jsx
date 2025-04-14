@@ -2,6 +2,7 @@ import css from './dishCard.module.css';
 
 import defaultImage from '../../images/defaultDishImage.jpg';
 import CustomButton from 'components/CustomButton/CustomButton';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const DishCard = ({ dishesData }) => {
   const getImage = imageName => {
@@ -11,6 +12,22 @@ const DishCard = ({ dishesData }) => {
       console.log(`Image not found: ${imageName}, using default image.`);
       return defaultImage;
     }
+  };
+
+  const handleAddDish = (id, dishName) => {
+    const cart = JSON.parse(sessionStorage.getItem('cart')) || {};
+
+    if (cart[id]) {
+      cart[id] += 1;
+    } else {
+      cart[id] = 1;
+    }
+
+    sessionStorage.setItem('cart', JSON.stringify(cart));
+
+    Notify.success(`${dishName} додано в корзину !`);
+
+    console.log(cart);
   };
 
   return (
@@ -36,7 +53,11 @@ const DishCard = ({ dishesData }) => {
             </div>
             <div className={css.dishPriceWrapper}>
               <p className={css.dishPrice}>{dish.price}</p>
-              <CustomButton label="Обрати" type="smallAdaptiveChose" />
+              <CustomButton
+                label="Обрати"
+                type="smallAdaptiveChose"
+                onClick={() => handleAddDish(dish.id, dish.name)}
+              />
             </div>
           </div>
         </div>

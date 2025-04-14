@@ -45,10 +45,6 @@ code {
     monospace;
 }
 
-div {
-  display: flex;
-}
-
 .container {
   display: flex;
   justify-content: center;

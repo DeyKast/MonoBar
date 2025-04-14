@@ -6,11 +6,12 @@ import CustomButton from 'components/CustomButton/CustomButton';
 import MenuList from 'components/MenuList/MenuList';
 
 import css from './menuPage.module.css';
+import CartButton from 'components/CartButton/CartButton';
 
 const MenuPage = () => {
   const [activeMenu, setActiveMenu] = useState('cookery');
   const touchRef = useRef(null);
-  const menuListRef = useRef(null); // Реф для MenuList
+  const menuListRef = useRef(null);
   const [touchStart, setTouchStart] = useState(null);
   const [isSwiping, setIsSwiping] = useState(false);
 
@@ -81,6 +82,8 @@ const MenuPage = () => {
           )}
         </motion.div>
       </div>
+
+      <CartButton />
     </DefaultPage>
   );
 };
