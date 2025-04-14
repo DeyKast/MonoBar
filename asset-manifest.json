@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/MonoBar/static/css/main.fbecb42e.css",
-    "main.js": "/MonoBar/static/js/main.0c530fc3.js",
-    "static/css/411.0f8dd7d5.chunk.css": "/MonoBar/static/css/411.0f8dd7d5.chunk.css",
-    "static/js/411.319b5719.chunk.js": "/MonoBar/static/js/411.319b5719.chunk.js",
-    "static/css/82.eda204c1.chunk.css": "/MonoBar/static/css/82.eda204c1.chunk.css",
-    "static/js/82.f36f07d7.chunk.js": "/MonoBar/static/js/82.f36f07d7.chunk.js",
-    "static/js/694.346af352.chunk.js": "/MonoBar/static/js/694.346af352.chunk.js",
+    "main.css": "/MonoBar/static/css/main.78872dbd.css",
+    "main.js": "/MonoBar/static/js/main.7c95ddba.js",
+    "static/css/411.58eaa022.chunk.css": "/MonoBar/static/css/411.58eaa022.chunk.css",
+    "static/js/411.dbadc031.chunk.js": "/MonoBar/static/js/411.dbadc031.chunk.js",
+    "static/css/973.60892d8a.chunk.css": "/MonoBar/static/css/973.60892d8a.chunk.css",
+    "static/js/973.4db853b1.chunk.js": "/MonoBar/static/js/973.4db853b1.chunk.js",
+    "static/css/181.0477e4f1.chunk.css": "/MonoBar/static/css/181.0477e4f1.chunk.css",
+    "static/js/181.9b08c796.chunk.js": "/MonoBar/static/js/181.9b08c796.chunk.js",
+    "static/js/64.dbc63046.chunk.js": "/MonoBar/static/js/64.dbc63046.chunk.js",
     "static/media/defaultDishImage.jpg": "/MonoBar/static/media/defaultDishImage.256c5cb41f339d37972c.jpg",
     "static/media/SpinachVarenyk.webp": "/MonoBar/static/media/SpinachVarenyk.8a48ed1cab17972c62ad.webp",
     "static/media/chickenBurger.webp": "/MonoBar/static/media/chickenBurger.2b7a0493683d39bb1b57.webp",
@@ -19,18 +21,20 @@
     "static/media/monoBurger.webp": "/MonoBar/static/media/monoBurger.663c8ab0daa8ea561191.webp",
     "static/media/PotatoVarenyk.webp": "/MonoBar/static/media/PotatoVarenyk.34a41fb35d97663211de.webp",
     "static/media/logo.png": "/MonoBar/static/media/logo.80074fe3916d1cbaf645.png",
-    "static/media/sprite.svg": "/MonoBar/static/media/sprite.3c9f3c1d6662c9b99d1242f9f47247c1.svg",
+    "static/media/sprite.svg": "/MonoBar/static/media/sprite.e61c310b5483c3e7474e3aa429ef8ef8.svg",
     "index.html": "/MonoBar/index.html",
-    "main.fbecb42e.css.map": "/MonoBar/static/css/main.fbecb42e.css.map",
-    "main.0c530fc3.js.map": "/MonoBar/static/js/main.0c530fc3.js.map",
-    "411.0f8dd7d5.chunk.css.map": "/MonoBar/static/css/411.0f8dd7d5.chunk.css.map",
-    "411.319b5719.chunk.js.map": "/MonoBar/static/js/411.319b5719.chunk.js.map",
-    "82.eda204c1.chunk.css.map": "/MonoBar/static/css/82.eda204c1.chunk.css.map",
-    "82.f36f07d7.chunk.js.map": "/MonoBar/static/js/82.f36f07d7.chunk.js.map",
-    "694.346af352.chunk.js.map": "/MonoBar/static/js/694.346af352.chunk.js.map"
+    "main.78872dbd.css.map": "/MonoBar/static/css/main.78872dbd.css.map",
+    "main.7c95ddba.js.map": "/MonoBar/static/js/main.7c95ddba.js.map",
+    "411.58eaa022.chunk.css.map": "/MonoBar/static/css/411.58eaa022.chunk.css.map",
+    "411.dbadc031.chunk.js.map": "/MonoBar/static/js/411.dbadc031.chunk.js.map",
+    "973.60892d8a.chunk.css.map": "/MonoBar/static/css/973.60892d8a.chunk.css.map",
+    "973.4db853b1.chunk.js.map": "/MonoBar/static/js/973.4db853b1.chunk.js.map",
+    "181.0477e4f1.chunk.css.map": "/MonoBar/static/css/181.0477e4f1.chunk.css.map",
+    "181.9b08c796.chunk.js.map": "/MonoBar/static/js/181.9b08c796.chunk.js.map",
+    "64.dbc63046.chunk.js.map": "/MonoBar/static/js/64.dbc63046.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbecb42e.css",
-    "static/js/main.0c530fc3.js"
+    "static/css/main.78872dbd.css",
+    "static/js/main.7c95ddba.js"
   ]
 }
