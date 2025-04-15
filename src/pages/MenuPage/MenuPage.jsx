@@ -1,12 +1,14 @@
-import { useState, useRef } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useRef, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
 import DefaultPage from 'components/DefaultPage/DefaultPage';
 import menuData from '../../service/menu.json';
 import CustomButton from 'components/CustomButton/CustomButton';
 import MenuList from 'components/MenuList/MenuList';
+import CartButton from 'components/CartButton/CartButton';
+import ScrollToTopButton from 'components/ScrollToTopButton/ScrollToTopButton';
 
 import css from './menuPage.module.css';
-import CartButton from 'components/CartButton/CartButton';
 
 const MenuPage = () => {
   const [activeMenu, setActiveMenu] = useState('cookery');
@@ -14,10 +16,30 @@ const MenuPage = () => {
   const menuListRef = useRef(null);
   const [touchStart, setTouchStart] = useState(null);
   const [isSwiping, setIsSwiping] = useState(false);
+  const [isCartVisible, setIsCartVisible] = useState(false);
+  const [cartUpdated, setCartUpdated] = useState(false); // 🚨 Додаємо стан для анімації
+
+  const checkCart = () => {
+    const cart = JSON.parse(sessionStorage.getItem('cart')) || {};
+    const hasItems = Object.keys(cart).length > 0;
+    setIsCartVisible(hasItems);
+
+    if (hasItems) {
+      setCartUpdated(true);
+      setTimeout(() => setCartUpdated(false), 600); // триває анімація блиму
+    }
+  };
+
+  useEffect(() => {
+    checkCart();
+    const onFocus = () => checkCart();
+    window.addEventListener('focus', onFocus);
+    return () => window.removeEventListener('focus', onFocus);
+  }, []);
 
   const handleTouchStart = e => {
     if (e.target.closest('.menuNavigator')) {
-      setIsSwiping(false); // Блокуємо свайп, якщо торкання в навігаторі
+      setIsSwiping(false);
       return;
     }
     setIsSwiping(true);
@@ -25,10 +47,8 @@ const MenuPage = () => {
   };
 
   const handleTouchMove = e => {
-    if (!touchStart || !isSwiping) return; // Не свайпаємо, якщо заблоковано
-
-    const touchCurrent = e.touches[0].clientX;
-    const diff = touchStart - touchCurrent;
+    if (!touchStart || !isSwiping) return;
+    const diff = touchStart - e.touches[0].clientX;
 
     if (Math.abs(diff) > 100) {
       if (diff > 0 && activeMenu === 'cookery') {
@@ -69,21 +89,29 @@ const MenuPage = () => {
         <motion.div
           key={activeMenu}
           className={css.menuSlider}
-          initial={{ opacity: 0.1, x: activeMenu === 'bar' ? 300 : -300 }}
+          initial={{ opacity: 0.1, x: activeMenu === 'bar' ? 150 : -150 }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0.1, x: activeMenu === 'bar' ? -300 : 300 }}
-          transition={{ type: 'spring', stiffness: 100, damping: 10 }}
+          exit={{ opacity: 0.1, x: activeMenu === 'bar' ? -150 : 150 }}
+          transition={{ type: 'spring', stiffness: 100, damping: 12 }}
         >
           {activeMenu === 'cookery' && (
-            <MenuList ref={menuListRef} data={menuData.cookery} />
+            <MenuList
+              ref={menuListRef}
+              data={menuData.cookery}
+              onAdd={checkCart}
+            />
           )}
           {activeMenu === 'bar' && (
-            <MenuList ref={menuListRef} data={menuData.bar} />
+            <MenuList ref={menuListRef} data={menuData.bar} onAdd={checkCart} />
           )}
         </motion.div>
       </div>
 
-      <CartButton />
+      <AnimatePresence>
+        {isCartVisible && <CartButton type="cart" blink={cartUpdated} />}
+      </AnimatePresence>
+
+      <ScrollToTopButton />
     </DefaultPage>
   );
 };

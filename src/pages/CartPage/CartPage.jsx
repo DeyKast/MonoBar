@@ -8,6 +8,7 @@ import menuData from '../../service/menu.json';
 
 import spritePath from '../../images/icons/sprite.svg';
 import defaultImage from '../../images/defaultDishImage.jpg';
+import CartButton from 'components/CartButton/CartButton';
 
 const CartPage = () => {
   const [cart, setCart] = useState({});
@@ -111,10 +112,10 @@ const CartPage = () => {
                       className={css.deleteBtn}
                       onClick={() => confirmAndRemove(dish.id)}
                     >
-                      <svg className={css.iconWrapper}>
+                      <svg className={css.icon}>
                         <use
                           className={css.icon}
-                          href={`${spritePath}#trashcan`}
+                          href={`${spritePath}#cancel`}
                         />
                       </svg>
                     </button>
@@ -128,6 +129,8 @@ const CartPage = () => {
           </>
         )}
       </div>
+
+      <CartButton type="undo" />
     </DefaultPage>
   );
 };

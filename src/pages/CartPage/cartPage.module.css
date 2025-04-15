@@ -1,14 +1,18 @@
 .cartContainer {
-  padding: 20px;
-
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 50px;
+
+  width: 100%;
 }
 
 .emptyCart {
   font-size: 18px;
   text-align: center;
   margin-top: 50px;
+
+  color: var(--beige-color);
 }
 
 .cartItem {
@@ -17,9 +21,10 @@
   align-items: center;
   margin-bottom: 20px;
   padding: 15px;
-  border: 1px solid #ddd;
   border-radius: 12px;
   background-color: var(--beige-color);
+
+  position: relative;
 }
 
 .image {
@@ -67,17 +72,36 @@
 }
 
 .deleteBtn {
-  background-color: #ff4d4f;
+  background-color: transparent !important;
   color: white;
   margin-left: auto;
+
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 .total {
   text-align: right;
   font-size: 16px;
-  margin-top: 30px;
+
+  padding-right: 20px;
+
+  width: 100%;
 
   border-top: 1px solid var(--beige-color);
 
   color: var(--beige-color);
+  background-color: var(--background-color);
+
+  position: fixed;
+  bottom: -1px;
+  right: 0px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+
+  fill: var(--background-color);
 }

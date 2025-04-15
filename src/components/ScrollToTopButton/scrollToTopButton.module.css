@@ -1,17 +1,4 @@
-.cartButtonContainer {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-
-  transition: all 200ms linear;
-}
-
-.undoContainerStyle {
-  bottom: 80px;
-}
-
-.cartButton {
+.scrollButton {
   background-color: #966d5b;
 
   border: none;
@@ -25,13 +12,16 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   padding: 0;
+
+  position: fixed;
+  bottom: 80px;
 }
 
-.cartButton:hover {
+.scrollButton:hover {
   background-color: var(--accent-color);
 }
 
-.iconWrapper {
+.icon {
   width: 24px;
   height: 24px;
   fill: white;

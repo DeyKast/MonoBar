@@ -11,8 +11,10 @@
   justify-content: flex-start;
 
   max-width: 620px;
+  min-height: calc(100vh - 145px);
 
   margin-top: 25px;
+  /* margin-bottom: 130px; */
 
   animation: fadeIn 0.5s ease-out;
 }

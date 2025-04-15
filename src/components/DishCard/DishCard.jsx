@@ -4,7 +4,7 @@ import defaultImage from '../../images/defaultDishImage.jpg';
 import CustomButton from 'components/CustomButton/CustomButton';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-const DishCard = ({ dishesData }) => {
+const DishCard = ({ dishesData, onAdd }) => {
   const getImage = imageName => {
     try {
       return require(`../../images/photos/${imageName}.webp`);
@@ -25,9 +25,12 @@ const DishCard = ({ dishesData }) => {
 
     sessionStorage.setItem('cart', JSON.stringify(cart));
 
-    Notify.success(`${dishName} додано в корзину !`);
+    onAdd();
 
-    console.log(cart);
+    Notify.success(`${dishName} додано в корзину !`, {
+      position: 'top',
+      distance: '50px',
+    });
   };
 
   return (

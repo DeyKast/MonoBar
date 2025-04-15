@@ -3,7 +3,7 @@ import MenuNavigator from 'components/MenuNavigator/MenuNavigator';
 import css from './menuList.module.css';
 import DishCard from 'components/DishCard/DishCard';
 
-const MenuList = forwardRef(({ data }, ref) => {
+const MenuList = forwardRef(({ data, onAdd }, ref) => {
   const navigatorRef = useRef(null);
   const categoriesRef = useRef({});
   const [isSticky, setIsSticky] = useState(false);
@@ -13,7 +13,7 @@ const MenuList = forwardRef(({ data }, ref) => {
     const handleScroll = () => {
       if (navigatorRef.current) {
         const offsetTop = navigatorRef.current.offsetTop;
-        setIsSticky(window.scrollY > offsetTop);
+        setIsSticky(window.scrollY > offsetTop + 200);
       }
 
       let currentCategory = null;
@@ -64,7 +64,7 @@ const MenuList = forwardRef(({ data }, ref) => {
             className={css.menuListCardsWrapper}
           >
             <p className={css.categoryName}>{category.category}</p>
-            <DishCard dishesData={category.items} />
+            <DishCard dishesData={category.items} onAdd={onAdd} />
           </div>
         ))}
       </div>
